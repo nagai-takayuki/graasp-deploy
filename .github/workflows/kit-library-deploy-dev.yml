@@ -39,7 +39,7 @@ on:
         required: true
       aws-secret-access-key:
         required: true
-      aws-region:
+      aws_region:
         required: true
       ecs-cluster:
         required: true
@@ -130,7 +130,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.aws-access-key-id }}
           aws-secret-access-key: ${{ secrets.aws-secret-access-key }}
-          aws-region: ${{ secrets.aws-region }}
+          aws_region: ${{ secrets.aws_region }}
 
       # Log in the local Docker client
       - name: Login to Amazon ECR
@@ -203,7 +203,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.aws-access-key-id }}
           aws-secret-access-key: ${{ secrets.aws-secret-access-key }}
-          aws-region: ${{ secrets.aws-region }}
+          aws_region: ${{ secrets.aws_region }}
 
       # Log in the local Docker client
       - name: Login to Amazon ECR
