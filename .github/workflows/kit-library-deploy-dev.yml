@@ -2,6 +2,18 @@ name: Reusable workflow that deploys to development ECS
 
 # Control when the action will run
 on:
+  # Allow the workflow to be manually triggered
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      stack:
+        # Description to be shown in the UI instead of 'stack'
+        description: '(Optional) Specify a stack stored in the staging-stacks folder. Format: YYYYMMddhhmm-staging.json'
+        # Default value if no value is explicitly provided
+        default: ''
+        # Input does not have to be provided for the workflow to run
+        required: false
+
   # Allow the workflow to be reusable
   workflow_call:
     # Define inputs which can be passed from the caller workflow
