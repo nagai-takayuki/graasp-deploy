@@ -1,4 +1,4 @@
-name: Reusable workflow that deploys to development ECS
+name: Deploy graasp-library to ECS
 
 # Control when the action will run
 on:
