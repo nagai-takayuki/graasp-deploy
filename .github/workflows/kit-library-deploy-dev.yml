@@ -1,5 +1,7 @@
 name: Deploy graasp-library to ECS
 
+    environment: development
+
 # Control when the action will run
 on:
   # Allow the workflow to be manually triggered
