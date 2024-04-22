@@ -1,7 +1,5 @@
 name: Deploy graasp-library to ECS
 
-    environment: development
-
 # Control when the action will run
 on:
   # Allow the workflow to be manually triggered
@@ -15,7 +13,7 @@ on:
         default: ''
         # Input does not have to be provided for the workflow to run
         required: false
-
+        
   # Allow the workflow to be reusable
   workflow_call:
     # Define inputs which can be passed from the caller workflow
@@ -88,6 +86,8 @@ env:
 jobs:
   test:
     name: Test
+    environment: development
+
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -106,6 +106,8 @@ jobs:
   build:
     needs: test
     name: Build
+    environment: development
+
     runs-on: ubuntu-latest
     # Define job output that is available to all downstream jobs that depend on this job
     outputs:
@@ -187,6 +189,7 @@ jobs:
   deploy:
     needs: build
     name: Deploy
+    environment: development
     runs-on: ubuntu-latest
 
     steps:
