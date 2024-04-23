@@ -1,5 +1,43 @@
 # Changelog
 
+## [1.24.0](https://github.com/nagai-takayuki/graasp-deploy/compare/v1.23.3...v1.24.0) (2024-04-23)
+
+
+### Features
+
+* add graasp account to library workflows ([#234](https://github.com/nagai-takayuki/graasp-deploy/issues/234)) ([e7d9b72](https://github.com/nagai-takayuki/graasp-deploy/commit/e7d9b7205712e450d2eab906f6fcb6f1e91c7b79))
+* Library env build ([#241](https://github.com/nagai-takayuki/graasp-deploy/issues/241)) ([0bb19fb](https://github.com/nagai-takayuki/graasp-deploy/commit/0bb19fb39fcbc8a24098ec406715e3e313576a87))
+
+
+### Bug Fixes
+
+* add account host for library in inputs ([31df313](https://github.com/nagai-takayuki/graasp-deploy/commit/31df3131f2add0d548699a96bc7eda62a3cb3b30))
+* add env variables ([#239](https://github.com/nagai-takayuki/graasp-deploy/issues/239)) ([14658b6](https://github.com/nagai-takayuki/graasp-deploy/commit/14658b6e7e98a088fbb686e096d57cacfbcb3587))
+* check for string value in condition ([d9efd3f](https://github.com/nagai-takayuki/graasp-deploy/commit/d9efd3fa5f8330086205967f7c82d1b1d12b9ea5))
+* delete unused workflows ([#257](https://github.com/nagai-takayuki/graasp-deploy/issues/257)) ([5c7c852](https://github.com/nagai-takayuki/graasp-deploy/commit/5c7c852876cb1bb9ec5dea7033224fbaa8b9c58d))
+* deploy ([205d0b6](https://github.com/nagai-takayuki/graasp-deploy/commit/205d0b65ff9df355640059dc098aa67b9095ec3b))
+* paths in deployement workflow ([7c07f2a](https://github.com/nagai-takayuki/graasp-deploy/commit/7c07f2ae9030a2329ba805fc75fbcefd7d6a5d22))
+* **publish-npm:** update node to 18 ([#231](https://github.com/nagai-takayuki/graasp-deploy/issues/231)) ([a9da241](https://github.com/nagai-takayuki/graasp-deploy/commit/a9da24151263318a4e4ea6db9add7612dd041e23))
+* remove backend from stack ([2bb4026](https://github.com/nagai-takayuki/graasp-deploy/commit/2bb4026fd940b4ee210ca55e1816692cf943847c))
+* remove graasp-map from deployed stack ([29683ce](https://github.com/nagai-takayuki/graasp-deploy/commit/29683ceeef95964cae5bee05c2ce720ca94041f1))
+* remove published tag id env ([#253](https://github.com/nagai-takayuki/graasp-deploy/issues/253)) ([9f3dc6f](https://github.com/nagai-takayuki/graasp-deploy/commit/9f3dc6fb567bbb7e33125321fc329bf1b42958d2))
+* remove test strings ([2fb8b3b](https://github.com/nagai-takayuki/graasp-deploy/commit/2fb8b3b9b9e7a248377f0da38d822ac64ad71cc2))
+* update deploy-s3 to use oidc ([27e25d2](https://github.com/nagai-takayuki/graasp-deploy/commit/27e25d239b9cdaab44aae4b84bea1d928f196f2b))
+* update deployment visualisation files ([adeeaed](https://github.com/nagai-takayuki/graasp-deploy/commit/adeeaed31bb350abbe778dcf849f0a7f00d5a936))
+* update latest ([076c716](https://github.com/nagai-takayuki/graasp-deploy/commit/076c7163b2c3c40b0c9cbed43eb865adda2cac50))
+* update workflows and folder names ([#246](https://github.com/nagai-takayuki/graasp-deploy/issues/246)) ([4971076](https://github.com/nagai-takayuki/graasp-deploy/commit/4971076ec14ef9ed5acfb69faf33a08183afe5ff))
+* use inputs instead of vars for library workflows ([#235](https://github.com/nagai-takayuki/graasp-deploy/issues/235)) ([fd4fdfa](https://github.com/nagai-takayuki/graasp-deploy/commit/fd4fdfaea0dc4a72f35ecbaddc7bca8160eae202))
+* versions in staging versions ([b0262d5](https://github.com/nagai-takayuki/graasp-deploy/commit/b0262d5ab3f25a144fd3638205285b73c6c7177b))
+
+
+### Reverts
+
+* change current staging versions ([4a7f802](https://github.com/nagai-takayuki/graasp-deploy/commit/4a7f80273e5e39758a8576262f1f686a547e74db))
+* revert library to 1.2.0 ([6dca2ef](https://github.com/nagai-takayuki/graasp-deploy/commit/6dca2ef9b5c9c009bf8d4ec3219381309afccc4f))
+* revert part of latest stack ([75e55fd](https://github.com/nagai-takayuki/graasp-deploy/commit/75e55fd1d86594037ec79d558c329d262991dfed))
+* set back previous versions ([2b5e6e3](https://github.com/nagai-takayuki/graasp-deploy/commit/2b5e6e3c68456169f8320fbc067e81548d7bb402))
+* set library to 1.2.0 ([02864e7](https://github.com/nagai-takayuki/graasp-deploy/commit/02864e738d6f50ecf19ee14ef406d691823e59ce))
+
 ## [1.23.3](https://github.com/graasp/graasp-deploy/compare/v1.23.2...v1.23.3) (2024-03-01)
 
 
