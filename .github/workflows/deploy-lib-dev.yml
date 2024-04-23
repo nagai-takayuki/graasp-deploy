@@ -1,3 +1,5 @@
+name: Deploy graasp-lib by reusable workflow
+
 jobs:
   call-deployment:
     runs-on: ubuntu-latest
