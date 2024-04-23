@@ -1,0 +1,20 @@
+jobs:
+  call-deployment:
+    runs-on: ubuntu-latest
+    environment: development  # この行を追加
+    steps:
+      - name: Call Reusable Workflow
+        uses: ./.github/workflows/reusable-deploy-workflow.yml@main
+        with:
+          app-name: 'my-app'
+          app-version: '1.0.0'
+          next-public-graasp-account-host: 'https://account.myapp.com'
+          ecs-task-definition: 'ecs_task_definition.json'
+        secrets:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: 'us-west-2'
+          ecs-cluster: 'my-app-cluster'
+          ecs-service: 'my-app-service'
+          ecr-repository: 'my-app-repo'
+          container-name-library: 'my-app-container'
