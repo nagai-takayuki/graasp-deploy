@@ -5,7 +5,6 @@ on:
 
 jobs:
   call_reusable_workflow:
-        environment: development
         uses: ./.github/workflows/library-deploy-dev.yml
         with:
           app-name: 'graasp-lib'
