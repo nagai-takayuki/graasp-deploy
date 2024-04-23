@@ -5,6 +5,7 @@ on:
 
 jobs:
   call_reusable_workflow:
+        environment: development
         uses: ./.github/workflows/library-deploy-dev.yml
         with:
           app-name: 'graasp-lib'
@@ -12,6 +13,32 @@ jobs:
           next-public-graasp-account-host: 'https://account.dev.graasp.jp'
           ecs-task-definition: 'ecs_task_definition.json'
         secrets:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-northeast-1
+          ecs-cluster:	graasp-dev
+          ecs-service:	graasp
+          ecr-repository:	graasp/library
+          container-name-library: graasp-library
+          next-public-api-host: https://api.dev.graasp.jp
+          next-public-ga-measurement-id:
+          next-public-graasp-analytics-host:
+          next-public-graasp-auth-host: https://auth.dev.graasp.jp
+          next-public-graasp-builder-host: https://builder.dev.graasp.jp
+          next-public-graasp-perform-host:
+          next-public-graasper-id:
+          next-public-sentry-dsn:
+          next-public-sentry-env:
+          next-public-domain:
+          port:
+
+
+    with:
+          app-name: 'graasp-lib'
+          app-version: '1.0.0'
+          next-public-graasp-account-host: 'https://account.dev.graasp.jp'
+          ecs-task-definition: 'ecs_task_definition.json'
+    secrets:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-1
