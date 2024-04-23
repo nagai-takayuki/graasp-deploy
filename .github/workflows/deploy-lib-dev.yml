@@ -6,7 +6,7 @@ on:
 jobs:
   call-deployment:
     runs-on: ubuntu-latest
-    environment: development  # この行を追加
+    environment: development  # 環境を指定
     steps:
       - name: Call Reusable Workflow
         uses: ./.github/workflows/reusable-deploy-workflow.yml@main
@@ -18,8 +18,8 @@ jobs:
         secrets:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: 'us-west-2'
-          ecs-cluster: 'my-app-cluster'
-          ecs-service: 'my-app-service'
-          ecr-repository: 'my-app-repo'
-          container-name-library: 'my-app-container'
+          aws-region: ${{ secrets.AWS_REGION }}
+          ecs-cluster: ${{ secrets.ECS_CLUSTER }}
+          ecs-service: ${{ secrets.ECS_SERVICE }}
+          ecr-repository: ${{ secrets.ECR_REPOSITORY }}
+          container-name-library: ${{ secrets.CONTAINER_NAME_LIBRARY }}
