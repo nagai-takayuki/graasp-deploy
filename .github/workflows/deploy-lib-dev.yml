@@ -7,9 +7,9 @@ jobs:
   call_reusable_workflow:
         uses: ./.github/workflows/library-deploy-dev.yml
         with:
-          app-name: 'my-app'
+          app-name: 'graasp-lib'
           app-version: '1.0.0'
-          next-public-graasp-account-host: 'https://account.myapp.com'
+          next-public-graasp-account-host: 'https://account.dev.graasp.jp'
           ecs-task-definition: 'ecs_task_definition.json'
         secrets:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
