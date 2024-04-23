@@ -9,7 +9,7 @@ jobs:
     environment: development
     steps:
       - name: Call Reusable Workflow
-        uses: ./.github/workflows/reusable-deploy-workflow.yml@main
+        uses: ./.github/workflows/library-deploy-dev.yml@main
         with:
           app-name: 'my-app'
           app-version: '1.0.0'
