@@ -15,11 +15,11 @@ jobs:
           app-version: '1.0.0'
           next-public-graasp-account-host: 'https://account.myapp.com'
           ecs-task-definition: 'ecs_task_definition.json'
-    secrets:
-      aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      aws-region: ${{ secrets.AWS_REGION }}
-      ecs-cluster: ${{ secrets.ECS_CLUSTER }}
-      ecs-service: ${{ secrets.ECS_SERVICE }}
-      ecr-repository: ${{ secrets.ECR_REPOSITORY }}
-      container-name-library: ${{ secrets.CONTAINER_NAME_LIBRARY }}
+        secrets:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+          ecs-cluster: ${{ secrets.ECS_CLUSTER }}
+          ecs-service: ${{ secrets.ECS_SERVICE }}
+          ecr-repository: ${{ secrets.ECR_REPOSITORY }}
+          container-name-library: ${{ secrets.CONTAINER_NAME_LIBRARY }}
