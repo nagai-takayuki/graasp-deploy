@@ -14,8 +14,20 @@ jobs:
         secrets:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_REGION }}
-          ecs-cluster: ${{ secrets.ECS_CLUSTER }}
-          ecs-service: ${{ secrets.ECS_SERVICE }}
-          ecr-repository: ${{ secrets.ECR_REPOSITORY }}
-          container-name-library: ${{ secrets.CONTAINER_NAME_LIBRARY }}
+          aws-region: ap-northeast-1
+          ecs-cluster:	graasp-dev
+          ecs-service:	graasp
+          ecr-repository:	graasp/library
+          container-name-library: graasp-library
+          next-public-api-host: https://api.dev.graasp.jp
+          next-public-ga-measurement-id:
+          next-public-graasp-analytics-host:
+          next-public-graasp-auth-host: https://auth.dev.graasp.jp
+          next-public-graasp-builder-host: https://builder.dev.graasp.jp
+          next-public-graasp-perform-host:
+          next-public-graasper-id:
+          next-public-sentry-dsn:
+          next-public-sentry-env:
+          next-public-domain:
+          port:
+
